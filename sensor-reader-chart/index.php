@@ -89,7 +89,7 @@ function sr_get_chart() {
     $hour = $_POST['hour'] ?? '';
 
     //mariadb-rekin konexioa
-    $db = new wpdb('adrian', 'Admin123', 'arduino_db', '192.168.71.214');
+    $db = new wpdb('adrian', 'Admin123', 'arduino_db', '192.168.71.202');
 
     if ($db->last_error) {
         echo json_encode(['error' => $db->last_error]);

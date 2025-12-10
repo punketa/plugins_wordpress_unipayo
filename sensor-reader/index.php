@@ -109,7 +109,7 @@ function sr_get_data() {
     $dt = isset($_POST['date_to'])   ? $_POST['date_to']   : ''; //dataren filtroak
 
     //mariadb-rekin konexioa (de normal estaria en la personal-php, pero nerea me dijo q asi tambien esta bien)
-    $db = new wpdb('adrian', 'Admin123', 'arduino_db', '192.168.71.214');
+    $db = new wpdb('adrian', 'Admin123', 'arduino_db', '192.168.71.202');
     //como estamos pasando los datos desde la compu d igor a la base de datos de adrian y de su db a wordpress estamos usando el remoto de mariadb
 
     if ($db->last_error) {
